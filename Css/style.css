@@ -25,16 +25,16 @@ body {
 }
 .top {
   position: fixed;
-  top: -450px;
-  left: -250px;
+  top: -400px;
+  left: -350px;
   z-index: -1;
   width: 750px;
 }
 
 .bottom {
   position: fixed;
-  bottom: -450px;
-  right: -250px;
+  bottom: -400px;
+  right: -350px;
   z-index: -1;
   width: 750px;
 }
