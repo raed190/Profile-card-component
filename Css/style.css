@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Dark-cyan);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+
+  overflow: hidden;
+}
+.top {
+  position: fixed;
+  top: -450px;
+  left: -250px;
+  z-index: -1;
+  width: 750px;
+}
+
+.bottom {
+  position: fixed;
+  bottom: -450px;
+  right: -250px;
+  z-index: -1;
+  width: 750px;
+}
+main {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+header {
+  position: relative;
+}
+
+header .victor {
+  border: 5px solid #fff;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: -60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.info {
+  text-align: center;
+  margin: 50px 0 0;
+  border-bottom: 1px solid hsl(0deg 0% 91%);
+}
+.info h1 {
+  font-size: 18px;
+  color: var(--Very-dark-desaturated-blue);
+}
+.info h1 span {
+  color: var(--Dark-gray);
+  margin-left: 10px;
+  font-weight: normal;
+}
+.info span:not(:first-child) {
+  display: block;
+  color: var(--Dark-gray);
+  margin: 10px 0 20px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px;
+}
+
+.stats span {
+  display: block;
+  text-align: center;
+}
+
+.stats span:first-child {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: var(--Very-dark-desaturated-blue);
+}
+.stats span:last-child {
+  color: var(--Dark-gray);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 375px) {
+  .top {
+    top: -200px;
+    left: -290px;
+    width: 500px;
+  }
+  .bottom {
+    bottom: -130px;
+    right: -270px;
+    width: 500px;
+  }
+}
